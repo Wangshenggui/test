@@ -18,6 +18,7 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -86,6 +87,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -99,6 +101,9 @@ int main(void)
     /* USER CODE BEGIN 3 */
       HAL_GPIO_TogglePin(zhangsan1_GPIO_Port,zhangsan1_Pin);
       HAL_GPIO_TogglePin(zhangsan2_GPIO_Port,zhangsan2_Pin);
+      
+      //ÕÅÈý
+      HAL_UART_Transmit(&huart1,(uint8_t*)"123",3,100);
   }
   /* USER CODE END 3 */
 }
