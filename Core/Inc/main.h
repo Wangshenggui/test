@@ -57,6 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define zhangsan1_Pin GPIO_PIN_0
+#define zhangsan1_GPIO_Port GPIOA
+#define zhangsan2_Pin GPIO_PIN_1
+#define zhangsan2_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
 
