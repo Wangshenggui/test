@@ -100,7 +100,6 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
       HAL_GPIO_TogglePin(zhangsan1_GPIO_Port,zhangsan1_Pin);
-      HAL_GPIO_TogglePin(zhangsan2_GPIO_Port,zhangsan2_Pin);
       
       //уехЩ
       HAL_UART_Transmit(&huart1,(uint8_t*)"123",3,100);
