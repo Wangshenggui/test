@@ -59,8 +59,6 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define zhangsan1_Pin GPIO_PIN_0
 #define zhangsan1_GPIO_Port GPIOA
-#define zhangsan2_Pin GPIO_PIN_1
-#define zhangsan2_GPIO_Port GPIOA
 #define lisi1_Pin GPIO_PIN_3
 #define lisi1_GPIO_Port GPIOA
 #define lisi2_Pin GPIO_PIN_4
