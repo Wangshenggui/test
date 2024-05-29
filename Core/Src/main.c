@@ -88,6 +88,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
+  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
 
   /* USER CODE END 2 */
@@ -106,6 +107,8 @@ int main(void)
       
       //张三
       HAL_UART_Transmit(&huart1,(uint8_t*)"123",3,100);
+      //李四
+      HAL_UART_Transmit(&huart3,(uint8_t*)"www",3,100);
   }
   /* USER CODE END 3 */
 }
